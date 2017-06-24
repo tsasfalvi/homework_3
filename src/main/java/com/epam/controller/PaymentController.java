@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HelloWorldController {
+public class PaymentController {
 
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
