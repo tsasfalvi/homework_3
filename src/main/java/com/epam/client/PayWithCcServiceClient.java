@@ -2,8 +2,10 @@ package com.epam.client;
 
 import com.epam.dto.cc.request.PayWithCcRequest;
 import com.epam.dto.cc.response.PayWithCcResponse;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
+@Component
 public class PayWithCcServiceClient {
     private RestTemplate restTemplate;
 
