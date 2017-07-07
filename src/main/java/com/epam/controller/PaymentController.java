@@ -29,7 +29,7 @@ public class PaymentController {
         return payFriendService.pay(payWithPayFriendRequest);
     }
 
-    @RequestMapping(value = "/payWithCC", method = POST)
+    @RequestMapping(value = "/payWithCc", method = POST)
     public PayWithCcResponse payWithCc(@RequestBody PayWithCcRequest payWithCcRequest) throws JsonProcessingException {
         return payWithCcService.payWithCc(payWithCcRequest);
     }

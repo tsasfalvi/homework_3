@@ -1,0 +1,21 @@
+{
+  "creditCard": {
+    "creditCardNumber": "4556498170181339",
+    "cvc": 111,
+    "expirationDate": {
+      "month": 11,
+      "year": 20
+    }
+  },
+  "customer": {
+    "address": "string",
+    "dateOfBirth": "2017-06-24",
+    "emailAddress": "string",
+    "firstName": "string",
+    "lastName": "string"
+  },
+  "payment": {
+    "amount": 0,
+    "currency": "HUF"
+  }
+}

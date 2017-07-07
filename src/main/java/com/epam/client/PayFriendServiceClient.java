@@ -4,7 +4,6 @@ import com.epam.dto.payfriend.getuser.request.GetUserRequest;
 import com.epam.dto.payfriend.getuser.response.GetUserResponse;
 import com.epam.dto.payfriend.pay.request.PayWithPayFriendRequest;
 import com.epam.dto.payfriend.pay.response.PayWithPayFriendResponse;
-import com.hazelcast.core.HazelcastInstance;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
@@ -12,11 +11,9 @@ import org.springframework.web.client.RestTemplate;
 @Component
 public class PayFriendServiceClient {
     private RestTemplate restTemplate;
-    private HazelcastInstance hazelcastInstance;
 
-    public PayFriendServiceClient(RestTemplate restTemplate, HazelcastInstance hazelcastInstance) {
+    public PayFriendServiceClient(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
-        this.hazelcastInstance = hazelcastInstance;
     }
 
     @Cacheable("userId")
