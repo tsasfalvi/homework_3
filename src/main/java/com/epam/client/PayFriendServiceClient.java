@@ -4,7 +4,6 @@ import com.epam.dto.payfriend.getuser.request.GetUserRequest;
 import com.epam.dto.payfriend.getuser.response.GetUserResponse;
 import com.epam.dto.payfriend.pay.request.PayWithPayFriendRequest;
 import com.epam.dto.payfriend.pay.response.PayWithPayFriendResponse;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
@@ -16,7 +15,6 @@ public class PayFriendServiceClient {
         this.restTemplate = restTemplate;
     }
 
-    @Cacheable("userId")
     public String getUserId(String email) {
         GetUserRequest payFriendIdRequest = new GetUserRequest(email);
 
