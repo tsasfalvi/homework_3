@@ -2,10 +2,8 @@ package com.epam;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication
-@ComponentScan(value = "com.epam.*")
+@SpringBootApplication(scanBasePackages = "com.epam.*")
 public class Application {
 
     public static void main(String[] args) {
